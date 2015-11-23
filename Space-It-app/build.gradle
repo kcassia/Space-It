@@ -1,0 +1,29 @@
+group 'SpaceIt'
+version '0.0.2-BETA'
+
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'jetty'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.8
+
+ext{
+    servletVersion = "3.1.0"
+    springVersion = "4.2.2.RELEASE"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compile 'javax.servlet:javax.servlet-api:'+servletVersion
+    compile 'org.apache.taglibs:taglibs-standard-impl:1.2.5'
+
+    compile 'org.springframework:spring-context:'+springVersion
+    compile 'org.springframework:spring-webmvc:'+springVersion
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
