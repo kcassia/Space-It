@@ -9,7 +9,11 @@
 
     <context:annotation-config/>
 
-    <context:component-scan base-package="org.spaceit.services"/>
+    <context:component-scan base-package="org.spaceit.services, org.spaceit.beans"/>
+
+    <bean id="userRepository" class="org.spaceit.beans.UserRepository">
+
+    </bean>
 
     <import resource="mvc-context.xml"/>
 

@@ -15,8 +15,9 @@
 <body>
     <h1>${gender_greeting}</h1>
 
-    <form id="Space-It" action="result" method="post">
+    <form id="Space-It" action="result-wait" method="post">
 
+        <input id="user-index" type="hidden" name="index" value=${index} >
         <input id="Space-time" type="hidden" name="time" >
         <input id="Space-submit" type="button" value="Hello">
 

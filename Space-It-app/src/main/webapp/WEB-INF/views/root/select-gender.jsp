@@ -19,6 +19,7 @@
     <br>
     <input type="radio" name="gender" value="another">Another
     <br>
+    <input id="addr" type="hidden" name=addr value=${addr} >
     <input type="submit"value="Go!">
 </form>
 
